@@ -1,0 +1,118 @@
+html {
+  background-color: #FFB533;
+  background: linear-gradient(153deg, #FFD300 0%, #FFB533 100%);
+  /* background-color: #E4E9FD; */
+  /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
+  /* background: rgb(2,255,191);
+background: linear-gradient(153deg, rgba(2,255,191,1) 0%, rgba(3,13,66,1) 100%); */
+min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: #FFB533;
+  /* color: white; */
+  /* color: #23a887; */
+  /* color: rgba(2,255,191,1); */
+  padding: 5px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #15202B;
+  /* background-color: #030d42; */
+  /* -webkit-filter: blur(7px); */
+  text-align: center;
+  height: 50px;
+}
+
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  /* text-decoration-color: #23a887; */
+  text-decoration-color: #FFB533;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #030d42;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  /* background-color: #030d42; */
+  /* color: #23a887; */
+  /* color: rgba(2,255,191,1); */
+  background-color: #15202B;
+  color: #FFB533;
+  font-size: 40px;
+  line-height: 0;
+  border-width: 0;
+  /* padding-bottom: 6px; */
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+footer img {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
