@@ -6,7 +6,8 @@ const bodyParser = require("body-parser");
 const _ = require("lodash");
 // install monggose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/todolistDB");
+
+mongoose.connect("mongodb+srv://wigarwijaya:Kamuband258@cluster0.hrurp8g.mongodb.net/todolistDB");
 const { Schema } = mongoose;
 
 const port = 3000;
