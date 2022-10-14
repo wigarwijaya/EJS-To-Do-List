@@ -24,4 +24,4 @@ exports.getDay = () => {
 
 };
 
-console.log(exports);
+// console.log(exports);
