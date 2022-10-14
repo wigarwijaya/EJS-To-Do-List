@@ -10,7 +10,6 @@ const mongoose = require("mongoose");
 mongoose.connect("mongodb+srv://wigarwijaya:Kamuband258@cluster0.hrurp8g.mongodb.net/todolistDB");
 const { Schema } = mongoose;
 
-const port = 3000;
 const app = express();
 
 // install and set EJS
@@ -129,6 +128,11 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
+  console.log(`Server has started successfully.`);
 });
